@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Alimentar o terrível monstro</title>
+  		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div class="table">
+			<form class="tr" action="http://terrivel.herokuapp.com/monster" method="POST"> <!-- ⬅️ GET! -->
+	    		<div class="td">
+	    		  <span id="cabecalho">Formulário</span><br>
+				  <span class="tr"><label>Quantidade de pedras: <input type="int" name="num_pedras" pattern="[0-9]*" placeholder="Digite um numero"></label><br></span>
+				  <span class="tr"><label for="tam_pedras">Tamanho das pedras:</label>
+				  <select name="tam_pedras" id="tam_pedras">
+					  <option value="1">1</option>
+					  <option value="1.5">1.5</option>
+					  <option value="2">2</option>
+					  <option value="2.5">2.5</option>
+					  <option value="3" selected>3</option>
+					  <option value="3.5">3.5</option>
+					  <option value="4">4</option>
+					  <option value="4.5">4.5</option>
+					  <option value="5">5</option>
+					  <option value="5.5">5.5</option>
+					  <option value="6">6</option>
+					  <option value="6.5">6.5</option>
+					  <option value="7">4</option>
+				  </select><br></span>
+				  <span class="tr"><label>Nome do monstrengo: <input name="nome" pattern="[A-Za-z]*" placeholder="Platcascsh	"></label><br></span>
+				  <span class="tr"><label for="corCeu1">Primeira cor do céu:</label>
+				  <select name="corCeu1" id="corCeu1" type="cor">
+					  <option value="blue" selected>Azul</option>
+					  <option value="white">Branco</option>
+					  <option value="gold">Dourada</option>
+					  <option value="green">Verde</option>
+				  </select><br></span>
+				  <span class="tr"><label for="corCeu2">Segunda cor do céu:</label>
+				  <select name="corCeu2" id="corCeu2" type="cor">
+					  <option value="blue">Azul</option>
+					  <option value="white" selected>Branco</option>
+					  <option value="gold">Dourada</option>
+					  <option value="green">Verde</option>
+				  </select><br></span>
+				  <span class="tr"><label for="tipo_pedras">Tipo das pedras:</label>
+				  <select name="tipo_pedras" id="tipo_pedras">
+					  <option value="marroada">marroada</option>
+					  <option value="ametista" selected>ametista</option>
+					  <option value="topazio">topazio</option>
+					  <option value="espinela">espinela</option>
+				  </select><br></span>
+				  <span class="tr"><label for="tipo_pedras_sortidas">Tipo das pedras sortidas:</label>
+				  <select name="tipo_pedras_sortidas" id="tipo_pedras_sortidas">
+					  <option value="não" selected>Não</option>
+					  <option value="sim">Sim</option>
+				  </select><br></span>
+				  <span class="tr"><button>"Enviar"</button></span>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
